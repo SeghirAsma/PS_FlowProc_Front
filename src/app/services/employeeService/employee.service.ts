@@ -11,7 +11,7 @@ export class EmployeeService {
   private apiServiceUrl=environment.apiBaseUrl;
    headers = new HttpHeaders({
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWhhci5raG1pc3NpQGdtYWlsLmNvbSIsImlhdCI6MTY5OTA5OTg5MSwiZXhwIjoxNzA3MDk5ODkxfQ.9csQV2leTEwSsxlB5V9ULDpMK0kIPRYEoZiN9rzr0Lo'
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbjNAZ21haWwuY29tIiwiaWF0IjoxNzAwOTQ2OTk5LCJleHAiOjE3MDg5NDY5OTl9.R4CjfsndVCnH54yUvcYVMEoAaQJhTDuZlP8QWIYovN0'
   });
   constructor(private http :HttpClient) { }
   // Register employee
@@ -20,7 +20,7 @@ export class EmployeeService {
   }
   // Get employees
   public getEmployees():Observable<Employee[]>{
-    return this.http.get<Employee[]>(`${this.apiServiceUrl}/api/user/all`,{headers:this.headers});
+    return this.http.get<Employee[]>(`${this.apiServiceUrl}/api/user/all`);
   }
 
 }
