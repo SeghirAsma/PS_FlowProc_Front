@@ -28,6 +28,8 @@ import { OrganisateurComponent } from './ComponentsEvent/organisateur/organisate
 import { Sidebar3Component } from './sidebar3/sidebar3/sidebar3.component';
 import { CalendarComponent } from './ComponentsEvent/calendar/calendar.component';
 import { ViewprovidersComponent } from './viewproviders/viewproviders.component';
+import { RegisterLoginComponent } from './ComponentsEvent/register-login/register-login.component';
+import { LoginRegisterComponent } from './ComponentsEvent/login-register/login-register.component';
 
 
 
@@ -56,6 +58,8 @@ import { ViewprovidersComponent } from './viewproviders/viewproviders.component'
     Sidebar3Component,
     CalendarComponent,
     ViewprovidersComponent,
+    RegisterLoginComponent,
+    LoginRegisterComponent,
     
   
   ],

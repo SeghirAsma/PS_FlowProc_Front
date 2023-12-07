@@ -23,6 +23,8 @@ import { OrganisationComponent } from './ComponentsEvent/organisation/organisati
 import { Sidebar3Component } from './sidebar3/sidebar3/sidebar3.component';
 import { CalendarComponent } from './ComponentsEvent/calendar/calendar.component';
 import { ViewprovidersComponent } from './viewproviders/viewproviders.component';
+import { RegisterLoginComponent } from './ComponentsEvent/register-login/register-login.component';
+import { LoginRegisterComponent } from './ComponentsEvent/login-register/login-register.component';
 
 const routes: Routes = [
   {path:'admin-dashboard',component:AdminDashboardMainComponent,children:[
@@ -47,7 +49,9 @@ const routes: Routes = [
   {path:'organisation', component:OrganisationComponent},
   {path:'sidebar3', component:Sidebar3Component},
   {path:'calendar', component:CalendarComponent},
-  {path:'viewprovider', component:ViewprovidersComponent}
+  {path:'viewprovider', component:ViewprovidersComponent},
+  {path:'registerlogin', component:RegisterLoginComponent},
+  {path:'loginregister', component:LoginRegisterComponent}
 
 
 
