@@ -24,26 +24,44 @@
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">First Name</label>
                                                 <input type="text" class="form-control" placeholder="Enter the first name.." [(ngModel)]="employee.firstname" name="firstname" required>
+                                                <div *ngIf="addForm.controls['firstname']?.hasError('required') && addForm.controls['firstname']?.dirty" class="text-danger">
+                                                    First Name is required.
+                                                </div>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Last Name</label>
                                                 <input type="text" class="form-control" placeholder="Enter the last name.." [(ngModel)]="employee.lastname" name="lastname" required>
+                                                <div *ngIf="addForm.controls['lastname']?.hasError('required')  && addForm.controls['lastname']?.dirty" class="text-danger">
+                                                    Last Name is required.
+                                                </div>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Email</label>
-                                                <input type="email" class="form-control" placeholder="Enter the Email Address.." [(ngModel)]="employee.email" name="email" required>
+                                                <input type="email" class="form-control" placeholder="exemple@yyyy.xx" [(ngModel)]="employee.email" name="email" required>
+                                                <div *ngIf="addForm.controls['email']?.hasError('required') && addForm.controls['email']?.dirty" class="text-danger">
+                                                    Email is required.
+                                                  </div>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Password</label>
                                                 <input type="password" class="form-control" placeholder="Enter the Password.." [(ngModel)]="employee.password" name="password" required>
+                                                <div *ngIf="addForm.controls['password']?.hasError('required') &&addForm.controls['password']?.dirty" class="text-danger">
+                                                    Password is required.
+                                                  </div>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label>Phone Number</label>
                                                 <input type="text" class="form-control" placeholder="(+216) _ _ _ _ _ _ _ _ "  [(ngModel)]="employee.phone" name="phone" required>
+                                                <div *ngIf="addForm.controls['phone']?.hasError('required') && addForm.controls['phone']?.dirty" class="text-danger">
+                                                    Phone Number is required.
+                                                  </div>
                                             </div>
                                             <div class="mb-3 col-md-6">
                                                 <label class="form-label">Position</label>
                                                 <input type="text" class="form-control" placeholder="Enter the position.."  [(ngModel)]="employee.position" name="position" required>
+                                                <div *ngIf="addForm.controls['position']?.hasError('required') && addForm.controls['position']?.dirty" class="text-danger">
+                                                    Position is required.
+                                                  </div>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -60,6 +78,9 @@
                                             <div class="mb-3 col-md-2">
                                                 <label class="form-label">ImageURL</label>
                                                 <input type="text" class="form-control" placeholder="Enter the ImageURL.." [(ngModel)]="employee.imageURL" name="imageURL" required>
+                                                <div *ngIf="addForm.controls['imageURL']?.hasError('required') && addForm.controls['imageURL']?.dirty" class="text-danger">
+                                                    imageURL is required.
+                                                  </div>
                                             </div>
                                         </div>
                                         <div class="text-end mt-4">
